@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VALT</title>
+    <link rel="icon" href="logo">
+    <link rel="stylesheet" href="style_produto.css">
+
+</head>
+<body>
+
+
+<!--Páginas a acessar pelo cabeçalho-->
+
+    <div class="banner">
+        <div class="logo"><a href = "index2.html"><img src="logo_1.png" alt="Logótipo"></a></div>
+        <div><h3 ><a class="Produto" href = "index2.html">Produtos</a></h3></div>
+        <div><h3><a class="Sobre" href = "sobrenos.html">Sobre nós</a></h3></div>
+    </div>
+
+
+<!--Informação relativa a cada produto-->
+
+    <div id="resultado">
+        <img id="imagemProduto" src="" alt="Imagem do Produto">
+        <div id="infoProduto">
+          <p><h3><strong><span id="nomeProduto">Product Name</span></strong></h3></p>
+          <p><span id="DescricaoProduto"></span></p>
+          <p><strong>Preço:</strong> <span id="precoUnitario">€ <span id="valorProduto">0.00</span></span></p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p><strong>Total:</strong> <span id="valorFinal">€ <span id="valorProdutoFinal">0.00</span></span></p>
+        </div>
+      
+<!--Botões de adicionar ou subtrair a qauntidade de produtos que funciona a partir das funções criadas em JS, neste caso "diminuirQuantidade()" e "aumentarQuantidade()"-->
+
+        <form class="buttons" onsubmit="return false;">
+          <span id="quantidade" class="quantity-display">1</span>
+          <button id="subtrair" type="button" onclick="diminuirQuantidade()">-</button>
+          <button id="adicionar" type="button" onclick="aumentarQuantidade()">+</button>
+        </form>
+    </div>
+     
+
+<!--Criação do botão para finalizar compra que "abre" o formulário a ser preenchido para a conclusão da mesma-->
+
+    <button id="finalizarcompra" type="button" onclick="openformulario()">Adicionar ao Carrinho</button>
+
+
+<!--Criação do formulário a ser preenchido para a conclusão da compra. Este, segue-se de uma função criada em JS que permite o envio dos dados para o e-mail-->
+
+    <div id="formulario" class="formulario">
+      <div class="formulario-conteudo">
+        <span class="close" onclick="closeformulario()">&times;</span>
+        <form id="formDados">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome"><br>
+          <label for="sobrenome">Sobrenome:</label><br>
+          <input type="text" id="sobrenome" name="sobrenome"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="morada">Morada:</label><br>
+          <input type="text" id="morada" name="morada"><br>
+          <br>
+          <input type="button" id="terminarbtn" value="Finalizar Compra" onclick="openEmailWindow()">
+        </form>
+      </div>
+    </div>
+
+
+   <!--Documento JS onde são feitas as funções dos botões e do formulário--> 
+
+    <script src="app_produto.js"></script>

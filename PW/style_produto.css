@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffffa;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    order: 2;
+}
+
+.Produto {
+    position: absolute;
+    margin-top: 30px;
+    left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.Sobre {
+    position: absolute;
+    width: 100px;
+    margin-top: 30px;
+    left: 155px;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+a:hover {
+    font-weight: 600;
+
+}
+
+
+
+#resultado {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffffa;
+
+}
+
+#imagemProduto{
+    width: 50%; 
+    justify-content: right;
+    margin-left: 60px;
+    order: 1;
+    margin-bottom: 5px;
+   
+}
+
+#infoProduto{
+    font-size: 18px; 
+    margin: 0 0 10px 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 50%; 
+    box-sizing: border-box; 
+    justify-content: left;
+    position: absolute;
+    top: 240px; 
+    left: 900px; 
+}
+
+#adicionar{
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #121212;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 120px; 
+    left: 990px; 
+    text-decoration: none;
+    background-color: #ffd34d;
+    transition: background-color 0.3s ease;
+}
+
+#subtrair{
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #121212;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 120px; 
+    left: 930px;
+    text-decoration: none;
+    background-color: #ffd34d;
+    transition: background-color 0.3s ease;
+}
+
+#adicionar:hover, #subtrair:hover{
+    background-color: #af8f2f;
+
+}
+#quantidade {
+    font-size: 19px; 
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 130px;
+    left: 910px;
+}
+#finalizarcompra {
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #121212;
+    background-color: #ffd34d;
+    border: none;
+    border-radius: 5px;
+    margin-left: 540px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 63px;
+    left: 670px; 
+}
+
+#finalizarcompra:hover {
+background-color: #af8f2f;
+}
+
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 865px;
+    top: 150px;
+    width: 40%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .formulario-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+#terminarbtn {
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #121212;
+    background-color: #ffd34d;
+    border: none;
+    border-radius: 5px;
+    margin-left: 0px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+  }
+
+#terminarbtn:hover {
+    background-color: #af8f2f;
+    }
